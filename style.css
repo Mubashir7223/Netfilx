@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.png1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    position: relative;
+    z-index: 10;
+    padding-top: 30px;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav button {
+    color: white;
+    width: 90px;
+    height: 35px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 76px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    gap: 10px;
+}
+
+.text .first-child,
+.text .second-child {
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.text .third-child {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text .forth-child {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.email-box {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.email-box input {
+    padding: 12px;
+    width: 400px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.email-box button {
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.email-box button:hover {
+    background-color: darkred;
+}
+
+h2 {
+    color: white;
+}
+
+.first {
+    color: white;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.trending {
+    background-color: black;
+    font-family: sans-serif;
+    padding: 80px;
+}
+
+.trending h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.trending-row {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.trending-row::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    min-width: 200px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.number {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    font-size: 120px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.9;
+    -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.reasons {
+    background-color: black;
+    font-family: sans-serif;
+    padding: 80px;
+}
+
+.reasons h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.reasons-row {
+    display: flex;
+    gap: 30px;
+}
+
+.cards {
+    position: relative;
+    width: 235px;
+    height: 325px;
+    transition: transform 0.3s;
+    background-color: #564cb250;
+    border-radius: 10px;
+}
+
+.cards .heading {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.cards .para {
+    color: lightgrey;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.faq-section {
+    background-color: black;
+    color: white;
+    padding: 80px;
+    font-family: sans-serif;
+}
+
+.faq-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; 
+}
+
+.faq-box {
+    background-color: rgb(114, 107, 107); 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.faq-box:hover {
+    background-color: rgb(220, 211, 211); 
+}
+
+.plus-icon {
+    font-size: 45px;
+    font-weight: 350; 
+}
+
+.email {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+    font-family: sans-serif; 
+}
+
+.email p {
+    color: white;
+    text-align: center;
+    margin: 0; 
+}
+
+.email-box {
+    display: flex;
+    gap: 10px;
+}
+
+.email-box input {
+    padding: 12px 20px;
+    width: 600px;
+    height: 60px; 
+    border-radius: 8px;
+    border: 1px solid #ccc; 
+    font-size: 16px;
+    box-sizing: border-box; 
+    background-color: black;
+}
+
+.email-box button {
+    background-color: #e50914; 
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: none; 
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.email-box button:hover {
+    background-color: darkred;
+}
+
+body {
+    background-color: #000; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.footer {
+    padding: 80px ;
+    color: #b3b3b3;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #ffffff; 
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+}
+
+.footer-column {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        max-width: 90vw;
+    }
+    .text .first-child,
+    .text .second-child {
+        font-size: 3rem;
+    }
+    .reasons-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email-box input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text .first-child,
+    .text .second-child {
+        font-size: 2.5rem;
+    }
+    .trending, .reasons, .faq-section, .footer {
+        padding: 40px 20px;
+    }
+    .email-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-box input {
+        width: 100%;
+        max-width: 500px;
+    }
+    .email-box button {
+        width: 100%;
+        max-width: 200px;
+    }
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        width: 100px;
+    }
+    nav button {
+        width: 75px;
+        height: 30px;
+    }
+    .text .first-child,
+    .text .second-child {
+        font-size: 1.8rem;
+    }
+    .text .third-child {
+        font-size: 16px;
+    }
+    .text .forth-child {
+        font-size: 14px;
+    }
+    .trending, .reasons, .faq-section, .footer {
+        padding: 30px 15px;
+    }
+    .cards {
+        width: 100%;
+    }
+    .faq-box {
+        font-size: 18px;
+        padding: 15px;
+    }
+    .plus-icon {
+        font-size: 30px;
+    }
+    .email-box input {
+        width: 90vw;
+    }
+    .footer-columns {
+        grid-template-columns: 1fr; 
+    }
+}
